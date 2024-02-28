@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home page {% endblock %}
+
+{% block content %}
+{% for msg in texts %}
+    <p>{{msg.textmsg }}</p>
+{% endfor %}
+{% endblock %}
